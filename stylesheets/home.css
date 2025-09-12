@@ -1,0 +1,222 @@
+@font-face {
+  font-family: RubikReg;
+  src: url(../fonts/Rubik/static/Rubik-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: RubikBold;
+  src: url(../fonts/Rubik/static/Rubik-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Staatliches;
+  src: url(../fonts/Staatliches/Staatliches-Regular.ttf);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-width: 1200px;
+  text-align: center;
+  margin: 0;
+  background-color: #000;
+  background-image: url("../images/home_background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0 0 1% 0;
+}
+
+h1 {
+  font-family: "Staatliches", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 88px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: 1% 0%;
+  font-size: 28px;
+  font-family: "RubikBold", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  color: #fff;
+}
+
+p {
+  font-family: "RubikReg", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.wrapper { 
+  width: 1200px; 
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 225px;
+  overflow: hidden; /* To prevent overflow if image exceeds bounds */
+  line-height: 0;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/banner_test.png");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  background-color: #9bddff;
+  width: 100%;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu li {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 2px solid #dbf4ff;
+  display: inline-block;
+  float: left;
+  padding: 0 0;
+}
+
+.nav-menu li:last-child {
+  border-right: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 4px 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: "RubikReg", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+  font-size: 24px;
+}
+
+.nav-menu li a:hover {
+  background-color: #6dd8ff;
+}
+
+.slideshow_container {
+  margin-top: 10px;
+  position: relative;
+  background-color: #000;
+}
+
+.slideshow {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow_caption {
+  float: right;
+  padding: 10% 5% 0% 2%;
+  width: 50%;
+  text-align: left;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #696969;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.text_block {
+  position: relative;
+  padding: 1%;
+  margin-top: 1%;
+  background: rgba(0, 0, 0, 0.418);
+}
