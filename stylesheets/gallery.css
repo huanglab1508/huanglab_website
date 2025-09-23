@@ -44,18 +44,27 @@ h1 {
 h2 {
   font-family: "RubikBold", sans-serif;
   font-style: bold;
+  text-decoration: underline;
   font-weight: 700;
   color: #fff;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
   margin: 1% 0 1% 0;
+}
+
+h3 {
+  font-family: "RubikReg", sans-serif;
+  font-style: normal;
+  color: #fff;
+  font-size: clamp(1rem, 1.75vw, 2.25rem);
+  margin: 0%;
 }
 
 p {
   font-family: "RubikReg", sans-serif;
   font-style: normal;
   color: #fff;
-  font-size: clamp(0.5rem, 2.25vw, 1.75rem);
-  margin: 0%;
+  font-size: clamp(0.5rem, 1.75vw, 1.5rem);
+  margin: 0 0 1% 0;
 }
 
 img {
@@ -157,39 +166,4 @@ nav {
 
 .nav-menu li a:hover {
   background-color: #6dd8ff;
-}
-
-.grid_left, .grid_right {
-  position: relative;
-  padding: 1%;
-  margin-top: 1%;
-  background: rgba(0, 0, 0, 0.418);
-  color: #ffffff;
-  font-size: 20px;
-  max-height: 60vh;
-}
-
-.grid_left {
-  display: grid;
-  grid-template-columns: 64% 34%;
-  gap: 2%;
-  text-align: left;
-}
-
-.grid_right {
-  display: grid;
-  grid-template-columns: 34% 64%;
-  gap: 2%;
-  text-align: right;
-}
-
-.figure {
-  overflow: hidden;
-}
-
-.figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 1%;
 }
