@@ -24,7 +24,7 @@ body {
   text-align: center;
   margin: 0;
   background-color: #000;
-  background-image: url("../images/home_background.png");
+  background-image: url("../images/background8.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -46,7 +46,7 @@ h2 {
   font-style: bold;
   font-weight: 700;
   color: #fff;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 2.75rem);
   margin: 1% 0 1% 0;
 }
 
@@ -54,7 +54,7 @@ p {
   font-family: "RubikReg", sans-serif;
   font-style: normal;
   color: #fff;
-  font-size: clamp(0.5rem, 2.25vw, 1.75rem);
+  font-size: clamp(0.5rem, 1.25vw, 1.75rem);
   margin: 0%;
 }
 
@@ -162,10 +162,9 @@ nav {
 .grid_left, .grid_right {
   position: relative;
   padding: 1%;
-  margin-top: 1%;
-  background: rgba(0, 0, 0, 0.418);
+  margin-top: 2%;
+  background: rgba(0, 0, 0, 0.55);
   color: #ffffff;
-  font-size: 20px;
   max-height: 60vh;
 }
 
